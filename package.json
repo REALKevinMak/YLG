@@ -13,6 +13,6 @@
   "author": "Htet Aung Hlaing",
   "license": "ISC",
   "dependencies": {
-    "ytdl-core": "^4.4.0"
+    "ytdl-core": "^4.4.1"
   }
 }
