@@ -1,0 +1,21 @@
+{
+  "name": "yalg",
+  "version": "0.1.0",
+  "description": "no description!",
+  "main": "index.js",
+  "start": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.15.0"
+  },
+  "author": "Htet Aung Hlaing",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "ytdl-core": "^4.4.0"
+  }
+}
