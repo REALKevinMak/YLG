@@ -1,6 +1,7 @@
 var http = require('http');
 const url = require('url');
 const ytdl = require('ytdl-core');
+const port = process.env.port || 4060;
 
 http.createServer(function (req, res) {
     
@@ -35,7 +36,7 @@ http.createServer(function (req, res) {
       }
     );
     console.log("server started!");
-}).listen(4060);
+}).listen(port);
 
 function parse_str(str) {
   return str.split('&').reduce(function(params, param) {
