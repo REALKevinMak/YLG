@@ -1,7 +1,7 @@
 var http = require('http');
 const url = require('url');
 const ytdl = require('ytdl-core');
-const port = process.env.port || 4060;
+const port = process.env.PORT || 4060;
 
 http.createServer(function (req, res) {
     
