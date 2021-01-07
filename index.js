@@ -15,7 +15,8 @@ http.createServer(function (req, res) {
     console.log(queryObject.id);
     // YouTube video ID
     var videoID = queryObject.id;
-
+    
+    if(ytdl.validateID(videoID)){
     ytdl.getInfo('www.youtube.com/watch?v='+videoID).then(
       response2 => {
         HighestBitrate = -1;
@@ -35,6 +36,10 @@ http.createServer(function (req, res) {
         });
       }
     );
+        }
+    else{
+    res.end("I");
+    }
     console.log("server started!");
 }).listen(port);
 
